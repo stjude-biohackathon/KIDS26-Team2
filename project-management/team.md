@@ -4,8 +4,8 @@
 - **Team lead:**  Sri Sivani Charan Yalamanchi - [insert github here]
 - **Communication channel:** [Add link]
 - **Project question/problem:** [Add one sentence]
-- **Expected output:** [Add one sentence]
-- **Tools and stack:** [Languages, libraries, notebooks, APIs, databases, services] [node.js, REACT, ]
+- **Expected output:** A working Text-to-SQL + RAG agent, demoed through a Streamlit chat interface, answering natural-language clinical questions against the real data.
+- **Tools and stack:** [Languages, libraries, notebooks, APIs, databases, services] [node.js, REACT, python]
 
 ## Roles
 
