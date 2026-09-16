@@ -1,0 +1,9 @@
+# Frontend requirements
+# Install project dependencies with: npm install
+
+Node.js >= 20.19
+npm >= 10
+React
+React DOM
+Vite
+Vite React plugin
