@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "sqlproj: Build hackathon",
+			"type": "process",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"/Users/sukeshsangam/Documents/Hackathon/clinical_agent/hackathon/hackathon.sqlproj"
+			],
+			"problemMatcher": "$sqlproj-problem-matcher",
+			"isBackground": true,
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Builds the hackathon SQL project"
+		}
+	]
+}

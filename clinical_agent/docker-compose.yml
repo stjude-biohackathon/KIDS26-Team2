@@ -1,0 +1,20 @@
+services:
+  # The backend MUST be listed here
+  mimic_hybrid_ai:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    command: uvicorn api:app --host 0.0.0.0 --port 8000 --reload
+
+  # The frontend MUST be listed here
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
