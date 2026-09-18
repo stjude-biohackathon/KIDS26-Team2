@@ -15,4 +15,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["python", "agent.py"]
+# Explicitly expose port 8000 for Azure's Ingress router
+EXPOSE 8000
+
+# Start the web server binding to 0.0.0.0
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]
